@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { auth } from '@lib/firebase';
 	import user from '@stores/user';
-	import { createUserWithEmailAndPassword, updateCurrentUser, updateProfile } from 'firebase/auth';
+	import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 
 	let email: string;
 	let senha: string;
@@ -20,9 +20,7 @@
 		}
 
 		// @ts-ignore
-		$user = { ...$user, displayName: displayName };
-
-		console.log(`Criando usuário ${res.user.email} | ${res.user.uid}`);
+		user.update((u) => ({ ...u, displayName: displayName }));
 		goto('/');
 	}
 </script>
