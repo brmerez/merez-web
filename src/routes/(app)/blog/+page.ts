@@ -1,4 +1,5 @@
-import type { Card } from '../../types/Card';
+// @ts-ignore
+import type { Card } from '@types/Card';
 
 export async function load() {
 	const res = await fetch('https://jsonplaceholder.typicode.com/posts');

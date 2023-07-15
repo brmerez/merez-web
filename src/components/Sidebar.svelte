@@ -19,11 +19,12 @@
 		<a href="/" on:click={() => (open = !open)}>~/</a>
 		<a href="/blog" on:click={() => (open = !open)}>~/blog/</a>
 		<a href="/projetos" on:click={() => (open = !open)}>~/projetos/</a>
+		<a href="/sobre" on:click={() => (open = !open)}>~/sobre/</a>
 	</div>
 </aside>
 
 <style lang="scss">
-	@use '../app.scss';
+	@use '@styles/app.scss';
 
 	aside {
 		height: 100vh;

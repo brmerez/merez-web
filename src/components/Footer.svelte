@@ -14,7 +14,7 @@
 </footer>
 
 <style lang="scss">
-	@use '../app.scss';
+	@use '@styles/app.scss';
 
 	.footer-inner {
 		display: flex;
@@ -34,7 +34,7 @@
 	footer {
 		background-color: #111;
 		justify-content: center;
-		padding: 0.5em 0;
+		padding: 0.5em 2em;
 
 		.socials {
 			display: flex;

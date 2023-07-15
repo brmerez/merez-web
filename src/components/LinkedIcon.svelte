@@ -9,7 +9,7 @@
 </a>
 
 <style lang="scss">
-	@use '../app.scss';
+	@use '@styles/app.scss';
 
 	.icon {
 		&:hover {

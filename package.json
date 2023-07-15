@@ -25,5 +25,7 @@
 		"vite": "^4.3.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"firebase": "^10.0.0"
+	}
 }

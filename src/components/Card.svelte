@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { Card } from '../types/Card';
+	// @ts-ignore
+	import type { Card } from '@types/Card';
 	export let data: Card;
 	const dt = Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
 
@@ -20,7 +21,7 @@
 </card>
 
 <style lang="scss">
-	@use '../app.scss';
+	@use '@styles/app.scss';
 
 	a {
 		flex-shrink: 0;

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import type { Card } from '../../../../types/Card';
+	// @ts-ignore
+	import type { Card } from '@types/Card';
 
 	export let data: Card;
 	data = { ...data, img: 'https://picsum.photos/1200/1200' };
@@ -58,11 +59,11 @@
 </article>
 
 <style lang="scss">
-	@use '../../../../app.scss';
+	@use '@styles/app.scss';
 
 	article {
 		::selection {
-			background-color: app.$accent2;
+			background-color: app.$accent;
 		}
 		padding-top: 1rem;
 		padding-bottom: 15rem;
@@ -82,7 +83,7 @@
 	blockquote {
 		margin-inline: 1em;
 		border-left: 0.3em solid app.$accent;
-		background-color: #111;
+		background-color: #222;
 		padding: 1.5em;
 		font-style: italic;
 		border-radius: 0.15em;
@@ -102,6 +103,7 @@
 		}
 		p {
 			margin: 1.5em 0;
+			text-align: justify;
 		}
 	}
 

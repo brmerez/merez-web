@@ -1,6 +1,7 @@
 <script lang="ts">
 	// import LinkedIcon from './LinkedIcon.svelte';
 	import Icon from '@iconify/svelte';
+	import user from '@stores/user';
 
 	export let open = false;
 	let prevY: number;
@@ -42,6 +43,11 @@
 					<li>
 						<a href="/projetos"> projetos </a>
 					</li>
+					{#if $user}
+						<li class="special">
+							<a href="/admin"> admin </a>
+						</li>
+					{/if}
 				</ul>
 			</nav>
 		{/if}
@@ -49,7 +55,14 @@
 </header>
 
 <style lang="scss">
-	@use '../app.scss';
+	@use '@styles/app.scss';
+
+	.special {
+		color: yellow;
+		:hover {
+			color: lime;
+		}
+	}
 
 	.hide {
 		top: -80px;
